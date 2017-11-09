@@ -13,204 +13,147 @@ a{
 	clear: both;
 	display: block;
 }
-.lefttop{
-	background: url(../img/lefttop.gif) repeat-x;
-	height: 40px;
-	line-height: 45px;
-	color: #fff;
-	font-size: 16px;
-	/*margin-bottom: -5px;*/
-}
-.lefttop span{
-	background: url(../img/leftico.png) no-repeat;
-	display: inline-block;
-	float :left;
-	width: 20px;
-	height: 20px;
-	margin: 13px 7px 0px 8px;
-}
-.leftmenu{
-	width: 185px;
-	background: url(../img/leftline.gif) repeat-y right;
-	padding-bottom:9999px ;
-	margin-bottom: -9999px;
-	overflow: hidden;
-}
-.leftmenu .title{
-	cursor: pointer;
-}
-.leftmenu dd{
-	background: url(../img/leftmenubg.gif) repeat-x;
-	line-height: 35px;
-	font-size: 13px;
-	font-weight: bold;
-	border-right: 1px solid #b7d5df;
-}
-.leftmenu dd span{
-	display: block;
-	float: left;
-	margin: 9px 8px 0px 9px;
-}
-.menuson{
-	font-weight: normal;
-	line-height: 30px;
-}
-.menuson li{
-	color:black;
-}
-.menuson li.active{
-	position: relative;
-	background: url(../img/libg.png) repeat-x;
-	color: #FFFFFF;
-	line-height: 30px;
-}
-.menuson li cite{
-	display: block;
-	background: url(../img/list.gif) no-repeat;
-	width: 16px;
-	height: 16px;
-	float: left;
-	margin-left: 28px;
-	margin-top: 8px;
-}
-.menuson li.active cite{
-	background:url(../img/list1.gif) no-repeat;
-}
-.menuson li.active i{
-	position: absolute;
-	display: block;
-	background: url(../img/sj.png) no-repeat;
-	width: 6px;
-	height: 11px;
-	top: 9px;
-	z-index: 10000;
-	right: -1px;
-}
-.menuson li a{
-	color: black;
-	text-decoration: none;
-}
-.menuson li.active a{
-	color: #FFFFFF;
-}
-.menuson li a:hover{
-	color: dodgerblue;
-}
 
 /**
- *top.html
+ * 登陆页面
  */
-.top{
-	background: url(../img/topbg.gif) repeat-x;
-	height: 88px;
+.login_head{
+	background: url(../img/loginbg1.png) repeat-x;
+	height: 47px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    width: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
 }
-.top .logo{
-	float: left;
-	background: url(../img/topleft.jpg) no-repeat;
-}
-.top .logo b{
+.login_head .left{
+	
+	position: absolute;
+	font-size: 12px;
 	display: block;
-	width:20px;
-	margin-left: -9999px;
-}
-.top .logo span{
-	display: inline-block;
-	background: url(../img/loginlogo.png) no-repeat;
-	float : left;
-	width:280px;
-	height: 71px;
-	margin-top:10px ;
-	margin-left:10px ;
-}
-.nav{
 	float: left;
+	width: 200px;
+	top: 15px;
+	left: 20px;
+	
 }
-.nav ul{
-	margin-left: 15px;
+.left img{
+	float: left;
+	margin-top: 1px;
+	margin-right: 8px;
 }
-.nav ul li{
+.left span{
+	color: #afc5d2;
+}
+.login_head .right{
+	position: absolute;
 	list-style: none;
-	float: left;
+	float: right;
+	right: 2px;
+	top: 15px;
+	
+}
+.right li{
+	float: right;
+	margin-right: 25px;
 	font-size: 14px;
-	color: #fff;
-	width: 92px;
-	height: 88px;
-	text-align: center;
+	
 }
-.nav ul li.selected{
-	background: url(../img/navbg.png) no-repeat;
+.right li a {
+	color: #afc5d2;
+	font-size: 12px;
 }
-.nav ul li a{
-    overflow: hidden;	
+.right li a:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.login_content{
+	top: 47px;
+	position: absolute;
+	background: url(../img/loginbg3.png) no-repeat center center;
+	width: 100%;
+	height: 585px;
+}
+.login_content span{
 	display: block;
+	background: url(../img/loginlogo.png) no-repeat center center;
+	width: 287px;
+	height: 71px;
 	margin: 0 auto;
-	width :70px;
-	margin-top: 7px;
+	margin-top: 95px;
 }
-.nav ul li h2{
-	font-size: 14px;
-	font-weight: normal;
+.login_content .loginbox{
+	position: relative;
+	background: url(../img/logininfo.png) no-repeat center center;
+	width: 692px;
+	height: 336px;
+	margin: 0 auto;
+	margin-top: 60px;
+	font-size: 12px;
 	
 }
-.topright{
-	
-	position:relative;
-	float: right;
-	background: url(../img/topright.jpg) no-repeat;
-	width: 167px;
-	height: 88px;
-}
-.topright ul{
-	
-}
-.topright ul li{
-	 
-	 list-style: none;
-	 height: 30px;
-	 float: left;
-	 padding-left: 9px;
-	 padding-right: 9px;
-	 margin-top: 10px;
-	 background: url(../img/line.gif) no-repeat right 6px;
-}
-.help span{
-	float: left;
-	padding-right:4px;
-	padding-top: 6px;
+.loginbox .username{
+	position: absolute;
+	background: url(../img/loginuser.png) no-repeat;
 	display: block;
-	width: 16px;
-	height: 16px;
-	background: url(../img/help.png) no-repeat left;
+    width: 299px;
+	height: 48px;
+	left: 285px;
+	top: 90px;
+	border: none;
+	line-height: 48px;
+	padding-left: 44px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.loginbox .password{
+	position: absolute;
+	background: url(../img/loginpassword.png) no-repeat;
+	display: block;
+	width: 299px;
+	height: 48px;
+	left: 285px;
+	top: 168px;
+	border: none;
+	line-height: 48px;
+	padding-left: 44px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.loginbox .remenber{
+	display: none;
+}
+.loginbox .loginfun{
+	list-style: none;
+	position: absolute;
+	left: 285px;
+	top: 236px;
+	color: #0b3a58;
+}
+.loginfun .login_click{
+	border: none;
+	background: url(../img/buttonbg.png) no-repeat;
+	height: 35px;
+	width: 110px;
+	font-size:14px;
+	color: #FFFFFF;
+}
+.loginfun .remenber_pwd{
+	width: 14px;
+	height: 14px;
+	margin-left: 20px;
+	
 	
 }
-.topright .quit{
-	background: none;
+
+.loginfun a{
+	color: #0b3a58;
+	font-size: 12px;
+	padding-left: 15px;
 }
-.user{
-	font-style: normal;
-	color: #fff;
-    height: 25px;
-    width: 145px;
-    text-align: center;
-    border-radius: 30px;
-	background: url(../img/ub1.png) repeat-x center;
-	clear:both;
-	float: right;
-	padding-top: 5px;
-	margin-right: 10px;
-}
-.user span{
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	background: url(../img/user.png) no-repeat left;
-	margin-right: 3px;
-}
-.user i{
-	display: inline-block;
-	margin-left: 5px;
-	font-style: normal;
-} 
-.user b{
-	color: red;
+.loginfun a:hover{
+	cursor: pointer;
+	color: cornflowerblue;
 }

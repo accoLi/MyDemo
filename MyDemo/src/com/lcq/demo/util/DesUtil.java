@@ -13,7 +13,8 @@ import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
 public class DesUtil {
-   public static String encrypt(String dataSource,String key) throws Exception{
+   private static String key = "ismykeys";
+   public static String encrypt(String dataSource) throws Exception{
 	   Key secretKey = getKey(key);
 	   Cipher cipher = Cipher.getInstance("DES");
 	   cipher.init(Cipher.ENCRYPT_MODE, secretKey);
@@ -21,7 +22,7 @@ public class DesUtil {
 	   BASE64Encoder be = new BASE64Encoder();
 	   return be.encode(bytes);
    }
-   public static String decrypt(String dataSource,String key) throws Exception{
+   public static String decrypt(String dataSource) throws Exception{
 	   Key secretKey = getKey(key);
 	   Cipher cipher = Cipher.getInstance("DES");
 	   cipher.init(Cipher.DECRYPT_MODE, secretKey);
@@ -38,11 +39,11 @@ public class DesUtil {
    
    public static void main(String [] args) throws Exception{
 	  
-	   String data = "abcde";
-	   String key = "boncbonc";
-	   String encryptStr = DesUtil.encrypt(data, key);
+	   String data = "123456";
+	   String key = "ismykeys";
+	   String encryptStr = DesUtil.encrypt(data);
 	   System.out.print("加密后的数据："+encryptStr);
-	   String decryptStr = DesUtil.decrypt("7Zx8dZXW824=", key);
+	   String decryptStr = DesUtil.decrypt("XH38H5bute4=");
 	   System.out.print("解密后的数据："+decryptStr);
    }
 }
